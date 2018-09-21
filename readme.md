@@ -23,6 +23,7 @@ The Lumen framework is open-sourced software licensed under the [MIT license](ht
 php-laravel备份mongo数据库
 
 需求是本地备份线上mongo数据库，平时只跑oplog； 当线上有新集合或者本地删掉集合后会自动同步线上集合到本地。 
+
 找了很多mongo备份资料，跟需求不一样或者是有bug； 于是用laravel自己写了一个。
 
 提供多种数据备份方式
