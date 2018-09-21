@@ -26,9 +26,13 @@ php-laravel备份mongo数据库
 
 提供多种数据备份方式
 Back:UpOplog 按oplog备份，集群只有分片能获取到oplog
+
 Back:UpDb 使用mongodump按集合下载，再使用mongorestore导入到指定数据库
+
 Back:ExIm 使用mongoexport按指定条数下载，再使用mongoimport导入到指定数据库
+
 Back:Guard 守护进程监控脚本，当脚本挂掉后立刻拉起；使用crontab执行
+
 * * * * * /usr/local/php/bin/php /data/www/php-script/artisan Back:Guard >> /data/logs/Guard.log
 
 Illuminate\Console\Command 配置基本参数
